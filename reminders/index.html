@@ -8,7 +8,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
-  <title>IBS Announcement</title>
+  <title>IBS Reminders</title>
 
   <style>
     html,
@@ -28,56 +28,48 @@
       box-sizing: border-box;
     }
 
-    .announcement-wrapper {
+    .reminder-page {
       width: 100%;
+      max-width: 100%;
       margin: 0;
       padding: 0;
       background: transparent;
-      text-align: center;
     }
 
-    .announcement-card {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      max-width: 100%;
+    .reminder-card {
+      width: 92%;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 8px 12px;
+      padding: 12px 14px;
       background: #fff7f0;
       border: 1px solid #f7c49f;
       border-left: 5px solid #F47421;
-      text-align: left;
-      vertical-align: top;
     }
 
-    .announcement-title {
-      margin: 0;
-      font-size: 13.5px;
+    .reminder-title {
+      margin: 0 0 8px 0;
+      font-size: 15px;
       line-height: 1.35;
       font-weight: 700;
       color: #0B2A49;
     }
 
-    .announcement-title .highlight {
+    .reminder-title .highlight {
       color: #F47421;
     }
 
-    .announcement-actions {
-      display: inline-flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 6px;
-      flex-shrink: 0;
+    .reminder-actions {
+      margin: 0 0 8px 0;
     }
 
-    .announcement-button {
+    .reminder-button {
       display: inline-block;
-      padding: 6px 9px;
+      margin: 0 6px 4px 0;
+      padding: 7px 11px;
       border-radius: 4px;
       color: #ffffff;
       text-decoration: none;
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.2;
       font-weight: 700;
       white-space: nowrap;
@@ -91,17 +83,26 @@
       background: #0B2A49;
     }
 
-    .announcement-button:hover {
-      opacity: 0.9;
+    .reminder-date {
+      margin: 0;
+      color: #777777;
+      font-size: 12px;
+      line-height: 1.3;
     }
 
     @media (max-width: 650px) {
-      .announcement-card {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 7px;
+      .reminder-card {
         width: 100%;
+        padding: 11px 12px;
+      }
+
+      .reminder-title {
+        font-size: 14px;
+      }
+
+      .reminder-button {
+        font-size: 12.5px;
+        padding: 7px 10px;
       }
     }
   </style>
@@ -109,17 +110,18 @@
 
 <body>
 
-  <div class="announcement-wrapper">
-    <div class="announcement-card">
+  <div class="reminder-page">
 
-      <p class="announcement-title">
+    <div class="reminder-card">
+
+      <p class="reminder-title">
         <span class="highlight">OBBBA Earning Code Is Now Available.</span>
-        Review the latest "No Tax on Overtime" resources.
+        Please review the latest "No Tax on Overtime" resources.
       </p>
 
-      <div class="announcement-actions">
+      <div class="reminder-actions">
         <a
-          class="announcement-button button-orange"
+          class="reminder-button button-orange"
           href="https://files.constantcontact.com/c4c8f1e5701/50d2ea8f-093e-48dc-a0ac-2d8b20f6f726.pdf"
           target="_blank"
           rel="noopener noreferrer">
@@ -127,15 +129,20 @@
         </a>
 
         <a
-          class="announcement-button button-blue"
+          class="reminder-button button-blue"
           href="https://youtu.be/PsbFJFyJ8ow"
           target="_blank"
           rel="noopener noreferrer">
-          Watch Video
+          Watch Video Overview
         </a>
       </div>
 
+      <p class="reminder-date">
+        Last updated: March 30, 2026
+      </p>
+
     </div>
+
   </div>
 
 </body>
