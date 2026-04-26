@@ -11,32 +11,33 @@
   <title>IBS Resources</title>
 
   <style>
+    html,
     body {
       margin: 0;
-      padding: 8px;
+      padding: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: #ffffff;
       color: #0B2A49;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
 
-    .section {
-      width: 100%;
-      max-width: 100%;
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      background: #ffffff;
-      box-shadow: 0 2px 8px rgba(11, 42, 73, 0.08);
-      overflow: hidden;
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
     }
 
     .links-area {
-      padding: 10px 12px;
+      width: 100%;
+      max-width: 100%;
+      padding: 6px 8px;
+      background: #ffffff;
     }
 
     .resource-group {
-      margin-bottom: 10px;
-      padding-bottom: 10px;
+      margin-bottom: 7px;
+      padding-bottom: 7px;
       border-bottom: 1px solid #e5e7eb;
     }
 
@@ -47,20 +48,23 @@
     }
 
     .group-title {
-      margin: 0 0 5px 0;
-      font-size: 13px;
+      margin: 0 0 3px 0;
+      font-size: 11.5px;
+      line-height: 1.2;
       font-weight: bold;
       color: #0B2A49;
     }
 
     .resource-link {
       display: block;
-      margin: 4px 0;
-      font-size: 12.5px;
-      line-height: 1.3;
+      margin: 2px 0;
+      font-size: 11px;
+      line-height: 1.2;
       color: #0069a6;
       font-weight: bold;
       text-decoration: underline;
+      word-break: normal;
+      overflow-wrap: anywhere;
     }
 
     .resource-link:hover {
@@ -68,13 +72,13 @@
     }
 
     .resource-note {
-      margin: 8px 0 0 0;
-      padding: 7px 8px;
-      border-left: 4px solid #F47421;
+      margin: 6px 0 0 0;
+      padding: 5px 7px;
+      border-left: 3px solid #F47421;
       background: #fff7f0;
       color: #374151;
-      font-size: 11.5px;
-      line-height: 1.35;
+      font-size: 10.5px;
+      line-height: 1.25;
     }
 
     .resource-note a {
@@ -86,66 +90,53 @@
     .resource-note a:hover {
       color: #F47421;
     }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 6px;
-      }
-
-      .links-area {
-        padding: 9px 10px;
-      }
-    }
   </style>
 </head>
 
 <body>
 
-  <div class="section">
+  <div class="links-area">
 
-    <div class="links-area">
-
-      <div class="resource-group">
-        <p class="group-title">Need Checks?</p>
-        <a class="resource-link" href="https://example.com/check-stock-order-form" target="_blank" rel="noopener noreferrer">
-          Check Stock Order Form: National Document Solutions
-        </a>
-      </div>
-
-      <div class="resource-group">
-        <p class="group-title">Changing Employer Banks?</p>
-        <a class="resource-link" href="https://example.com/schedule-b3-bank-change-form" target="_blank" rel="noopener noreferrer">
-          Schedule B3: Employer Bank Change Authorization Form
-        </a>
-      </div>
-
-      <div class="resource-group">
-        <p class="group-title">Bulk Import Data?</p>
-
-        <a class="resource-link" href="https://example.com/base-compensation-import-quick-guide" target="_blank" rel="noopener noreferrer">
-          Base Compensation Import
-        </a>
-
-        <a class="resource-link" href="https://example.com/payroll-data-import" target="_blank" rel="noopener noreferrer">
-          Payroll Data Import
-        </a>
-
-        <a class="resource-link" href="https://example.com/scheduled-earnings" target="_blank" rel="noopener noreferrer">
-          Scheduled Earnings
-        </a>
-
-        <a class="resource-link" href="https://example.com/scheduled-deductions" target="_blank" rel="noopener noreferrer">
-          Scheduled Deductions
-        </a>
-
-        <p class="resource-note">
-          Need to import something else? Contact
-          <a href="mailto:ibssupport@ibspayroll.com">Innovative</a>
-          for other available import options.
-        </p>
-      </div>
-
+    <div class="resource-group">
+      <p class="group-title">Need Checks?</p>
+      <a class="resource-link" href="https://example.com/check-stock-order-form" target="_blank" rel="noopener noreferrer">
+        Check Stock Order Form: National Document Solutions
+      </a>
     </div>
+
+    <div class="resource-group">
+      <p class="group-title">Changing Employer Banks?</p>
+      <a class="resource-link" href="https://example.com/schedule-b3-bank-change-form" target="_blank" rel="noopener noreferrer">
+        Schedule B3: Employer Bank Change Authorization Form
+      </a>
+    </div>
+
+    <div class="resource-group">
+      <p class="group-title">Bulk Import Data?</p>
+
+      <a class="resource-link" href="https://example.com/base-compensation-import-quick-guide" target="_blank" rel="noopener noreferrer">
+        Base Compensation Import
+      </a>
+
+      <a class="resource-link" href="https://example.com/payroll-data-import" target="_blank" rel="noopener noreferrer">
+        Payroll Data Import
+      </a>
+
+      <a class="resource-link" href="https://example.com/scheduled-earnings" target="_blank" rel="noopener noreferrer">
+        Scheduled Earnings
+      </a>
+
+      <a class="resource-link" href="https://example.com/scheduled-deductions" target="_blank" rel="noopener noreferrer">
+        Scheduled Deductions
+      </a>
+
+      <p class="resource-note">
+        Need to import something else? Contact
+        <a href="mailto:ibssupport@ibspayroll.com">Innovative</a>
+        for other available import options.
+      </p>
+    </div>
+
   </div>
 
 </body>
