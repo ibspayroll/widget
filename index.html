@@ -8,35 +8,38 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
 
-  <title>Bank Holiday and Tax Information Sheet</title>
+  <title>IBS Payroll Resources</title>
 
   <style>
     body {
       margin: 0;
-      padding: 8px;
+      padding: 10px;
       font-family: Arial, Helvetica, sans-serif;
       background: #ffffff;
       color: #0B2A49;
     }
 
-    .resource-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      width: 100%;
-      max-width: 1420px;
+    .wrapper {
+      max-width: 1280px;
       margin: 0 auto;
     }
 
-    .resource-card {
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
-      overflow: hidden;
-      background: #ffffff;
-      box-shadow: 0 2px 8px rgba(11, 42, 73, 0.08);
+    .resource-layout {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 12px;
+      align-items: start;
     }
 
-    .resource-title {
+    .section {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(11, 42, 73, 0.08);
+      overflow: hidden;
+    }
+
+    .section-title {
       padding: 9px 12px;
       background: #0B2A49;
       color: #ffffff;
@@ -51,12 +54,70 @@
       border: 0;
     }
 
-    @media (max-width: 800px) {
-      body {
-        padding: 6px;
-      }
+    .links-area {
+      padding: 14px 16px;
+    }
 
-      .resource-grid {
+    .resource-group {
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .resource-group:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .group-title {
+      margin: 0 0 7px 0;
+      font-size: 14px;
+      font-weight: bold;
+      color: #0B2A49;
+    }
+
+    .resource-link {
+      display: block;
+      margin: 6px 0;
+      font-size: 13px;
+      line-height: 1.4;
+      color: #0069a6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .resource-link:hover {
+      text-decoration: underline;
+    }
+
+    .resource-note {
+      margin: 10px 0 0 0;
+      padding: 9px 10px;
+      border-left: 4px solid #F47421;
+      background: #fff7f0;
+      color: #374151;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .resource-note a {
+      color: #0069a6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .resource-note a:hover {
+      text-decoration: underline;
+    }
+
+    .quick-guide {
+      font-weight: normal;
+      color: #F47421;
+    }
+
+    @media (max-width: 900px) {
+      .resource-layout {
         grid-template-columns: 1fr;
       }
 
@@ -64,31 +125,87 @@
         height: 520px;
       }
     }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 6px;
+      }
+
+      .links-area {
+        padding: 12px;
+      }
+
+      iframe {
+        height: 480px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="resource-grid">
+  <div class="wrapper">
 
-    <div class="resource-card">
-      <div class="resource-title">Tax Information Sheet</div>
-      <iframe
-        title="Tax Information Sheet"
-        src="https://workdrive.zohoexternal.com/embed/pnhs703fd297949724f868faa9c6a1d9c1b81?toolbar=true&amp;appearance=light&amp;themecolor=green"
-        sandbox="allow-downloads allow-forms allow-top-navigation-by-user-activation allow-top-navigation-to-custom-protocols allow-top-navigation allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-presentation allow-popups-to-escape-sandbox allow-popups allow-pointer-lock allow-orientation-lock allow-modals"
-        allowfullscreen>
-      </iframe>
-    </div>
+    <div class="resource-layout">
 
-    <div class="resource-card">
-      <div class="resource-title">Bank Holiday Calendar</div>
-      <iframe
-        title="Bank Holiday Calendar"
-        src="https://workdrive.zohoexternal.com/embed/pnhs7d5feb4521ce440d1822fe86687dd0302?toolbar=true&amp;appearance=light&amp;themecolor=green"
-        sandbox="allow-downloads allow-forms allow-top-navigation-by-user-activation allow-top-navigation-to-custom-protocols allow-top-navigation allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-presentation allow-popups-to-escape-sandbox allow-popups allow-pointer-lock allow-orientation-lock allow-modals"
-        allowfullscreen>
-      </iframe>
+      <div class="section">
+        <div class="section-title">IBS and Bank Holiday Calendar</div>
+        <iframe
+          title="IBS and Bank Holiday Calendar"
+          src="https://workdrive.zohoexternal.com/embed/pnhs7d5feb4521ce440d1822fe86687dd0302?toolbar=true&amp;appearance=light&amp;themecolor=green"
+          sandbox="allow-downloads allow-forms allow-top-navigation-by-user-activation allow-top-navigation-to-custom-protocols allow-top-navigation allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-presentation allow-popups-to-escape-sandbox allow-popups allow-pointer-lock allow-orientation-lock allow-modals"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="section">
+        <div class="section-title">IBS Resources</div>
+
+        <div class="links-area">
+
+          <div class="resource-group">
+            <p class="group-title">Need Checks?</p>
+            <a class="resource-link" href="https://example.com/check-stock-order-form" target="_blank" rel="noopener noreferrer">
+              Check Stock Order Form: National Document Solutions
+            </a>
+          </div>
+
+          <div class="resource-group">
+            <p class="group-title">Changing Employer Banks?</p>
+            <a class="resource-link" href="https://example.com/schedule-b3-bank-change-form" target="_blank" rel="noopener noreferrer">
+              Schedule B3: Employer Bank Change Authorization Form
+            </a>
+          </div>
+
+          <div class="resource-group">
+            <p class="group-title">Bulk Import Data?</p>
+
+            <a class="resource-link" href="https://example.com/base-compensation-import-quick-guide" target="_blank" rel="noopener noreferrer">
+              Base Compensation Import
+            </a>
+
+            <a class="resource-link" href="https://example.com/payroll-data-import" target="_blank" rel="noopener noreferrer">
+              Payroll Data Import
+            </a>
+
+            <a class="resource-link" href="https://example.com/scheduled-earnings" target="_blank" rel="noopener noreferrer">
+              Scheduled Earnings
+            </a>
+
+            <a class="resource-link" href="https://example.com/scheduled-deductions" target="_blank" rel="noopener noreferrer">
+              Scheduled Deductions
+            </a>
+
+            <p class="resource-note">
+              Need to import something else? Contact
+              <a href="mailto:ibssupport@ibspayroll.com">Innovative</a>
+              for other available import options.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
   </div>
