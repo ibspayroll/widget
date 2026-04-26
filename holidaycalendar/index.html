@@ -33,6 +33,7 @@
     .calendar-page {
       width: 100%;
       height: 100%;
+      min-height: 430px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -40,24 +41,28 @@
       background: transparent;
     }
 
-    .calendar-link {
+    .calendar-layout {
       width: 100%;
       max-width: 900px;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 18px;
+    }
+
+    .calendar-image-link {
+      display: block;
+      width: 100%;
+      max-width: 620px;
       text-decoration: none;
     }
 
     .calendar-image {
       display: block;
       width: 100%;
-      max-width: 620px;
       height: auto;
       object-fit: contain;
       border: 0;
-      box-shadow: none;
     }
 
     .download-text {
@@ -80,13 +85,22 @@
       text-decoration: none;
     }
 
+    a:hover {
+      color: #F47421;
+    }
+
     @media (max-width: 900px) {
-      .calendar-link {
+      .calendar-page {
+        align-items: flex-start;
+        padding: 10px 12px;
+      }
+
+      .calendar-layout {
         flex-direction: column;
         gap: 10px;
       }
 
-      .calendar-image {
+      .calendar-image-link {
         max-width: 100%;
       }
 
@@ -97,24 +111,35 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="calendar-page">
-    <a
-      class="calendar-link"
-      href="https://workdrive.zohoexternal.com/embed/pnhs7d5feb4521ce440d1822fe86687dd0302?toolbar=true&amp;appearance=light&amp;themecolor=green"
-      target="_blank"
-      rel="noopener noreferrer">
 
-      <img
-        class="calendar-image"
-        src="calendar.png"
-        alt="IBS and Bank Holiday Calendar">
+    <div class="calendar-layout">
 
-      <span class="download-text">
+      <a
+        class="calendar-image-link"
+        href="https://workdrive.zohoexternal.com/embed/pnhs7d5feb4521ce440d1822fe86687dd0302?toolbar=true&amp;appearance=light&amp;themecolor=green"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <img
+          class="calendar-image"
+          src="calendar.png"
+          alt="IBS and Bank Holiday Calendar">
+      </a>
+
+      <a
+        class="download-text"
+        href="https://workdrive.zohoexternal.com/embed/pnhs7d5feb4521ce440d1822fe86687dd0302?toolbar=true&amp;appearance=light&amp;themecolor=green"
+        target="_blank"
+        rel="noopener noreferrer">
         Open / Download Calendar
-      </span>
-    </a>
+      </a>
+
+    </div>
+
   </div>
 
 </body>
