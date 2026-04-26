@@ -3,39 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IBS Test Page</title>
+  <title>Employee Resources</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #0B2A49;
+    }
+
+    .resource-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .resource-header {
+      margin-bottom: 12px;
+      padding: 10px 14px;
+      border-left: 5px solid #F47421;
+      background: #fff7f0;
+      border-radius: 8px;
+    }
+
+    .resource-header h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #0B2A49;
+    }
+
+    .resource-header p {
+      margin: 4px 0 0 0;
+      font-size: 13px;
+      color: #374151;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .resource-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(11, 42, 73, 0.08);
+    }
+
+    .resource-title {
+      padding: 9px 12px;
+      background: #0B2A49;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 520px;
+      border: 0;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        padding: 8px;
+      }
+
+      .resource-grid {
+        grid-template-columns: 1fr;
+      }
+
+      iframe {
+        height: 480px;
+      }
+
+      .resource-header h2 {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 
-<body style="margin:0; padding:20px; font-family:Arial, Helvetica, sans-serif; background:#ffffff; color:#0B2A49;">
+<body>
 
-  <div style="max-width:700px; margin:0 auto; border:1px solid #e5e7eb; border-radius:10px; padding:20px; box-shadow:0 2px 8px rgba(11,42,73,0.08);">
+  <div class="resource-wrapper">
 
-    <h2 style="margin-top:0; color:#0B2A49;">
-      Test GitHub Page
-    </h2>
-
-    <p style="font-size:14px; line-height:1.5;">
-      This is a simple test page hosted on GitHub Pages. If you can see this message, the page is loading correctly.
-    </p>
-
-    <div style="margin:18px 0; padding:12px; border-left:4px solid #F47421; background:#fff7f0;">
-      <strong style="color:#0B2A49;">Status:</strong>
-      <span style="color:#333333;"> Page loaded successfully.</span>
+    <div class="resource-header">
+      <h2>Employee Resources</h2>
+      <p>Use the sections below to access the available guides and forms.</p>
     </div>
 
-    <p style="font-size:13px; line-height:1.5;">
-      Helpful links:
-    </p>
+    <div class="resource-grid">
 
-    <p style="font-size:13px; line-height:1.8;">
-      <a href="https://www.ibspayroll.com" target="_blank" style="color:#F47421; font-weight:bold; text-decoration:none;">
-        IBS Website
-      </a>
-      |
-      <a href="https://desk.zoho.com/portal/ibspayroll/home" target="_blank" style="color:#F47421; font-weight:bold; text-decoration:none;">
-        Support Portal
-      </a>
-    </p>
+      <div class="resource-card">
+        <div class="resource-title">Resource 1</div>
+        <iframe
+          title="Resource 1"
+          src="https://workdrive.zohoexternal.com/embed/pnhs703fd297949724f868faa9c6a1d9c1b81?toolbar=true&amp;appearance=light&amp;themecolor=green"
+          sandbox="allow-downloads allow-forms allow-top-navigation-by-user-activation allow-top-navigation-to-custom-protocols allow-top-navigation allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-presentation allow-popups-to-escape-sandbox allow-popups allow-pointer-lock allow-orientation-lock allow-modals"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-title">Resource 2</div>
+        <iframe
+          title="Resource 2"
+          src="https://workdrive.zohoexternal.com/embed/pnhs7d5feb4521ce440d1822fe86687dd0302?toolbar=true&amp;appearance=light&amp;themecolor=green"
+          sandbox="allow-downloads allow-forms allow-top-navigation-by-user-activation allow-top-navigation-to-custom-protocols allow-top-navigation allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-presentation allow-popups-to-escape-sandbox allow-popups allow-pointer-lock allow-orientation-lock allow-modals"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
 
   </div>
 
