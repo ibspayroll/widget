@@ -28,91 +28,148 @@
       box-sizing: border-box;
     }
 
-    .links-area {
+    .resources {
       width: 100%;
       max-width: 100%;
-      padding: 10px 12px;
+      padding: 10px 10px;
       background: #ffffff;
     }
 
-    .resource-group {
-      margin-bottom: 10px;
-      padding-bottom: 10px;
+    .top-box {
+      padding: 10px 10px;
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .line {
+      font-size: 12.5px;
+      line-height: 1.45;
+      margin-bottom: 6px;
+      color: #0B2A49;
+    }
+
+    .line:last-child {
+      margin-bottom: 0;
+    }
+
+    .label {
+      font-weight: 700;
+      color: #0B2A49;
+    }
+
+    a {
+      color: #0073c8;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    a:hover {
+      color: #F47421;
+    }
+
+    .divider {
+      color: #F47421;
+      font-weight: 700;
+      margin: 0 5px;
+    }
+
+    .section {
+      padding: 0 0 11px 0;
+      margin-bottom: 11px;
       border-bottom: 1px solid #e5e7eb;
     }
 
-    .resource-group:last-child {
+    .section:last-child {
       margin-bottom: 0;
       padding-bottom: 0;
       border-bottom: 0;
     }
 
-    .group-title {
-      margin: 0 0 5px 0;
-      font-size: 13.5px;
-      line-height: 1.25;
+    .section-title {
+      margin: 0 0 7px 0;
+      font-size: 13px;
+      line-height: 1.3;
       font-weight: 700;
       color: #0B2A49;
     }
 
     .resource-link {
       display: block;
-      margin: 3px 0;
-      font-size: 13px;
-      line-height: 1.25;
-      color: #0069a6;
-      font-weight: 700;
+      margin: 5px 0;
+      font-size: 12.5px;
+      line-height: 1.35;
+      color: #0073c8;
       text-decoration: underline;
-      word-break: normal;
+      font-weight: 700;
       overflow-wrap: anywhere;
     }
 
-    .resource-link:hover {
-      color: #F47421;
-    }
-
-    .resource-note {
-      margin: 8px 0 0 0;
-      padding: 7px 9px;
+    .mini-note {
+      margin: 10px 0 0 0;
+      padding: 8px 9px;
       border-left: 4px solid #F47421;
       background: #fff7f0;
       color: #374151;
-      font-size: 12.5px;
-      line-height: 1.3;
+      font-size: 11.5px;
+      line-height: 1.35;
     }
 
-    .resource-note a {
-      color: #0069a6;
-      font-weight: 700;
-      text-decoration: underline;
-    }
-
-    .resource-note a:hover {
-      color: #F47421;
+    .subtle {
+      font-weight: 400;
+      color: #4b5563;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="links-area">
+  <div class="resources">
 
-    <div class="resource-group">
-      <p class="group-title">Need Checks?</p>
+<div class="top-box">
+  <div class="line">
+    <span class="label">Support:</span>
+    <a href="mailto:IBSsupport@ibspayroll.com">IBSsupport@ibspayroll.com</a>
+    <span class="divider">|</span>
+    <a href="https://desk.zoho.com/portal/ibspayroll/home" target="_blank" rel="noopener noreferrer">
+      Client Support Portal
+    </a>
+  </div>
+
+  <div class="line">
+    <span class="label">Phone:</span>
+    <a href="tel:7075864300">707-586-4300</a>
+  </div>
+
+  <div class="line">
+    <span class="label">Video Guides:</span>
+    <a href="https://www.youtube.com/playlist?list=PL1cKtS9u-auOcyT_p-HQ1EMCCWW_CstU0" target="_blank" rel="noopener noreferrer">Payroll</a>
+    <span class="divider">|</span>
+    <a href="https://www.youtube.com/playlist?list=PL1cKtS9u-auP_Wa5BpLfEMpmCrqVp27TA" target="_blank" rel="noopener noreferrer">TLM</a>
+    <span class="divider">|</span>
+    <a href="https://www.youtube.com/playlist?list=PL1cKtS9u-auPhuPJYjsvq8Wj-oKvi6sbt" target="_blank" rel="noopener noreferrer">HR</a>
+  </div>
+</div>
+
+    <div class="section">
+      <p class="section-title">Common Requests</p>
+
       <a class="resource-link" href="https://example.com/check-stock-order-form" target="_blank" rel="noopener noreferrer">
-        Check Stock Order Form: National Document Solutions
+        Check Stock Order Form
+        <span class="subtle">- National Document Solutions</span>
       </a>
-    </div>
 
-    <div class="resource-group">
-      <p class="group-title">Changing Employer Banks?</p>
       <a class="resource-link" href="https://example.com/schedule-b3-bank-change-form" target="_blank" rel="noopener noreferrer">
-        Schedule B3: Employer Bank Change Authorization Form
+        Employer Bank Change Authorization Form
+      </a>
+            <a class="resource-link" href="https://example.com/schedule-b3-bank-change-form" target="_blank" rel="noopener noreferrer">
+        Tax Information Sheet
       </a>
     </div>
 
-    <div class="resource-group">
-      <p class="group-title">Bulk Import Data?</p>
+    <div class="section">
+      <p class="section-title">Bulk Import Templates</p>
 
       <a class="resource-link" href="https://example.com/base-compensation-import-quick-guide" target="_blank" rel="noopener noreferrer">
         Base Compensation Import
@@ -130,9 +187,9 @@
         Scheduled Deductions
       </a>
 
-      <p class="resource-note">
+      <p class="mini-note">
         Need to import something else? Contact
-        <a href="mailto:ibssupport@ibspayroll.com">Innovative</a>
+        <a href="mailto:IBSsupport@ibspayroll.com">Innovative</a>
         for other available import options.
       </p>
     </div>
