@@ -245,6 +245,25 @@
     </div>
 
   </div>
-<script type="text/javascript" id="zohodeskasap">var d=document;s=d.createElement("script"),s.type="text/javascript",s.id="zohodeskasapscript",s.defer=!0,s.nonce="{place_your_nonce_value_here}",s.src="https://desk.zoho.com/portal/api/web/asapApp/1207488000032517560?orgId=903647257",t=d.getElementsByTagName("script")[0],t.parentNode.insertBefore(s,t),window.ZohoDeskAsapReady=function(s){var e=window.ZohoDeskAsap__asyncalls=window.ZohoDeskAsap__asyncalls||[];window.ZohoDeskAsapReadyStatus?(s&&e.push(s),e.forEach(s=>s&&s()),window.ZohoDeskAsap__asyncalls=null):s&&e.push(s)};</script>
+<script type="text/javascript" id="zohodeskasap">
+var d=document;
+var s=d.createElement("script");
+s.type="text/javascript";
+s.id="zohodeskasapscript";
+s.defer=true;
+s.src="https://desk.zoho.com/portal/api/web/asapApp/1207488000032517560?orgId=903647257";
+var t=d.getElementsByTagName("script")[0];
+t.parentNode.insertBefore(s,t);
+window.ZohoDeskAsapReady=function(callback){
+  var calls=window.ZohoDeskAsap__asyncalls=window.ZohoDeskAsap__asyncalls||[];
+  if(window.ZohoDeskAsapReadyStatus){
+    if(callback){calls.push(callback);}
+    calls.forEach(function(fn){if(fn){fn();}});
+    window.ZohoDeskAsap__asyncalls=null;
+  }else if(callback){
+    calls.push(callback);
+  }
+};
+</script>
 </body>
 </html>
